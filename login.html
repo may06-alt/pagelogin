@@ -4,18 +4,48 @@
 <head>
     <title>login form</title>
     <link rel="stylesheet" type="text/css" href="style3.css">
-    <a href="script.js"></a>
-
+    <!-- <a href="script.js"></a> -->
+    <!-- <script>
+        function verifypassword(){
+            var pwd = document.getElementById("pwd").value;
+            // checking the empty password field
+            if(pwd == ""){
+                document.getElementById("message").innerHTML = "required please";
+                return false;
+            }
+            // minimum password lenght validation(sourced this from online but understood)
+            if(pwd.lenght< 8){
+                document.getElementById("message").innerHTML = "password must be at least 8 characters";
+                return false;
+            }
+            //checking max lenght val.
+            if(pwd.lenght > 10){
+                document.getElementById("message").innerHTML = "password must not exceed 10 characters";
+                return false;
+            } else{
+                alert("password correct")
+            }
+        }
+    </script> -->
+    
     <body>
+        <!-- <script>
+            function showAlert(){
+                alert("welcome")
+            }
+        </script> -->
+    
         <div class="loginbox">
             <!-- <img src="./img/download.png" class="avatar"> -->
             <h1>Login</h1>
             <form>
                 <p>Username</p>
-                <input type="text" name="" placeholder="Enter Username">
+                <input type="text" id="uname" name="" placeholder="Enter Username">
                 <p>Password</p>
-                <input type="password" name="" placeholder="Enter Password">
-                <input type="submit" name="" value="login">
+                <input type="password" id="pwd" name="" placeholder="Enter Password">
+                <p>Re-enter Password</p>
+                <input type="password" name="" id="pwd" placeholder="Re-enter Password">
+                <input type="submit"   value="submit">
                 <a href="#"> forgot your password?</a><br>
                 <a href="#">Don't have an account? </a>
             </form>
